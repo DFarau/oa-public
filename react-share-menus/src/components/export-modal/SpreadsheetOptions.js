@@ -101,7 +101,7 @@ const SpreadsheetOptions = ({
     <div className="spreadsheet-options">
       <Radio content="XLSX (MS Excel)" name="spreadsheet-format" id="xlsx" setChoice={handleFormat} defaultChecked />
       <Radio content="CSV" name="spreadsheet-format" id="csv" setChoice={handleFormat} />
-      <div>
+      <div className="checkbox">
         <label htmlFor="languages">
           <input name="columns" id="languages" type="checkbox" defaultChecked={!displayLanguages} onChange={() => setDisplayLanguages(!displayLanguages)} />
           {intl.formatMessage(messages.allLanguages)}
@@ -119,24 +119,26 @@ const SpreadsheetOptions = ({
           </div>
         )}
       </div>
-      <label htmlFor="fields">
-        <input name="columns" id="fields" type="checkbox" defaultChecked={!displayFields} onChange={() => setDisplayFields(!displayFields)} />
-        {intl.formatMessage(messages.allFields)}
-      </label>
-      {displayFields && (
-      <div className="margin-left-md checkbox-list">
-        <label htmlFor="allFields">
-          <input name="fields" id="allFields" type="checkbox" onChange={handleCheckAll} value="allFields" className="margin-right-sm" />
-          {intl.formatMessage(messages.selectAll)}
+      <div className="checkbox">
+        <label htmlFor="fields">
+          <input name="columns" id="fields" type="checkbox" defaultChecked={!displayFields} onChange={() => setDisplayFields(!displayFields)} />
+          {intl.formatMessage(messages.allFields)}
         </label>
-        {fields.map((field, index) => (
-          <label htmlFor={field.source} key={field.source}>
-            <input name="fields" id={field.source} type="checkbox" onChange={event => handleFields(event, index)} value={field.source} className="margin-right-sm" checked={checkedState[index]} />
-            {formatTarget(field.target)}
+        {displayFields && (
+        <div className="margin-left-md checkbox-list">
+          <label htmlFor="allFields">
+            <input name="fields" id="allFields" type="checkbox" onChange={handleCheckAll} value="allFields" className="margin-right-sm" />
+            {intl.formatMessage(messages.selectAll)}
           </label>
-        ))}
+          {fields.map((field, index) => (
+            <label htmlFor={field.source} key={field.source}>
+              <input name="fields" id={field.source} type="checkbox" onChange={event => handleFields(event, index)} value={field.source} className="margin-right-sm" checked={checkedState[index]} />
+              {formatTarget(field.target)}
+            </label>
+          ))}
+        </div>
+        )}
       </div>
-      )}
     </div>
   );
 };
