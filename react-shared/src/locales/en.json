@@ -1,15 +1,6 @@
 {
-  "ReactShared.ConsentBanner.accept": "Accept",
-  "ReactShared.ConsentBanner.decline": "Decline",
-  "ReactShared.ConsentBanner.informationText": "This agenda uses cookies from the Google Analytics tracking service. They allow the administrators of the agenda to get insight on what content is viewed by visitors on websites. Do you accept them?",
-  "ReactShared.ConsentBanner.moreInfoLink": "Click here for more information",
   "ReactShared.ImageInput.acceptedFiles": "Accepted files",
-  "ReactShared.ImageInput.fileTooLarge": "File {fileName} is {fileSize}, the upper limit for file size is {maxSize}",
-  "ReactShared.ImageInput.fileTooSmall": "File {fileName} is {fileSize}, the lower limit for file size is {minSize}",
-  "ReactShared.ImageInput.notSupported": "File {fileName} is not supported",
   "ReactShared.ImageInput.remove": "Remove",
-  "ReactShared.ImageInput.tooManyFiles": "Too many files, only accepts a single file",
   "ReactShared.ImageInput.update": "Update the image",
-  "ReactShared.ImageInput.upload": "Upload an image",
-  "ReactShared.LeaveWarningPrompt.areYouSure": "Are you sure you want to leave this page? All unsaved data will be lost."
+  "ReactShared.ImageInput.upload": "Upload an image"
 }
