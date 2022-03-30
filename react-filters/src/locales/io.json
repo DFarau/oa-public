@@ -33,6 +33,8 @@
   "ReactFilters.messages.attendanceMode.mixed": "crwdns16872:0crwdne16872:0",
   "ReactFilters.messages.attendanceMode.offline": "crwdns16874:0crwdne16874:0",
   "ReactFilters.messages.attendanceMode.online": "crwdns16876:0crwdne16876:0",
+  "ReactFilters.messages.boolean.notSelected": "crwdns17310:0crwdne17310:0",
+  "ReactFilters.messages.boolean.selected": "crwdns17312:0crwdne17312:0",
   "ReactFilters.messages.featured.featured": "crwdns16878:0crwdne16878:0",
   "ReactFilters.messages.filterTitles.addMethod": "crwdns16596:0crwdne16596:0",
   "ReactFilters.messages.filterTitles.adminLevel3": "crwdns16598:0crwdne16598:0",
