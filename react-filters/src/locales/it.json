@@ -1,1 +1,14 @@
-{}
+{
+  "ReactFilters.dateRanges.currentMonth": "Mese corrente",
+  "ReactFilters.dateRanges.currentWeek": "Settimana corrente",
+  "ReactFilters.messages.attendanceMode.mixed": "Misto",
+  "ReactFilters.messages.attendanceMode.online": "In linea",
+  "ReactFilters.messages.featured.featured": "Selezionato",
+  "ReactFilters.messages.filterTitles.city": "Città",
+  "ReactFilters.messages.filterTitles.department": "Dipartimento",
+  "ReactFilters.messages.filterTitles.featured": "Selezionato",
+  "ReactFilters.messages.filterTitles.keyword": "Parole Chiave",
+  "ReactFilters.messages.state.controlled": "Controllato",
+  "ReactFilters.messages.state.published": "Pubblicato",
+  "ReactFilters.messages.state.refused": "Rifiutato"
+}
