@@ -1,4 +1,10 @@
 {
   "rtp.multiRecurrencerForm.confirmation": "Sono stati aggiunti gli orari ricorrenti",
-  "rtp.recurrencerForm.confirmation": "Sono stati aggiunti gli orari ricorrenti"
+  "rtp.multiRecurrencerForm.day": "giorno",
+  "rtp.multiRecurrencerForm.month": "mese",
+  "rtp.multiRecurrencerForm.week": "settimana",
+  "rtp.recurrencerForm.confirmation": "Sono stati aggiunti gli orari ricorrenti",
+  "rtp.recurrencerForm.day": "giorno",
+  "rtp.recurrencerForm.month": "mese",
+  "rtp.recurrencerForm.week": "settimana"
 }
