@@ -1,5 +1,10 @@
 {
   "cancel": "Annulla",
   "close": "Chiudere",
-  "modal-title": "Esportare"
+  "jsonDoc2": "qui",
+  "modal-title": "Esportare",
+  "official-agenda": "Agenda ufficiale",
+  "private-agenda": "Agenda privato",
+  "search-agenda": "Cerca",
+  "select-all": "Selezionare tutto"
 }
