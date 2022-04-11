@@ -139,6 +139,7 @@ function render( filename, cb ) {
       : [
         path.resolve( __dirname, '..' ),                      // bs-templates
         path.resolve( __dirname, '../node_modules' ),         // bs-templates node_modules
+        path.resolve(__dirname, '../../node_modules' ),       // oa-public node_modules
         path.resolve( __dirname, '../../../node_modules' )    // oa root node_modules
       ]
   }, ( err, result ) => {
