@@ -7,7 +7,7 @@ function optionToLabel(options, id, lang) {
   return flattenLabel(options.find(v => v.id === id).label, lang);
 }
 module.exports = function decorateOptionedFieldsWithLabels(event, { agenda, lang }) {
-  const additionnalFields = agenda.schema.fields
+  const additionalFields = agenda.schema.fields
     .filter(v => !!v.options && v.schemaType !== 'event')
     .reduce((accu, fieldSchema) => {
         if (!event[fieldSchema.field]) return accu;
@@ -16,5 +16,5 @@ module.exports = function decorateOptionedFieldsWithLabels(event, { agenda, lang
         return accu;
     }, {});
 
-  return { ...event, ...additionnalFields };
+  return { ...event, ...additionalFields };
 };
