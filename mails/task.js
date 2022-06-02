@@ -2,6 +2,7 @@
 
 const logs = require('@openagenda/logs');
 const render = require('./templater');
+const defaultFormatMessage = require('./utils/defaultFormatMessage');
 
 const log = logs('mails/task');
 
@@ -27,11 +28,7 @@ async function runFilterTask(config, params) {
       await config.beforeSend(params);
     }
 
-    const labels = (config.translations.labels || {})[params.template] || {};
-    params.data.__ = config.translations.makeLabelGetter(
-      labels,
-      params.data.lang
-    );
+    params.data.__ = defaultFormatMessage(config, params.template, params.data.lang);
 
     Object.assign(params.data, config.defaults.data);
 
